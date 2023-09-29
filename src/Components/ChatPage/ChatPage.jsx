@@ -69,7 +69,7 @@ const ChatPage = () => {
         response.status === 200 && setRespLoading(false);
       })
       .catch((err) => {
-        toast.success("Something went wrong!", {
+        toast.error("Something went wrong!", {
           position: "bottom-center",
           theme: "colored",
         });
