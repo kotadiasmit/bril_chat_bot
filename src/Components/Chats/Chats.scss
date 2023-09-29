@@ -1,0 +1,41 @@
+.chat-sub-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 0.8rem;
+  .bot-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+  }
+}
+.chat-content-dir {
+  justify-content: flex-start;
+}
+.user-name-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(111, 111, 111);
+  padding: 8px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.name {
+  margin: 0px;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.chat {
+  color: white;
+  margin-top: 0px;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 0px;
+  width: 75%;
+}
+.text-dir {
+  text-align: end;
+}
