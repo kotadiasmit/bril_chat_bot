@@ -62,6 +62,7 @@ const ChatPage = () => {
       .get(APP_URL, {
         headers: {
           Authorization: URL_TOKEN,
+          "Content-Type": "*",
         },
       })
       .then((response) => {
