@@ -5,7 +5,6 @@ import { ToastContainer, toast } from "react-toastify";
 import "./ChatPage.scss";
 
 const APP_URL = process.env.REACT_APP_REPLY;
-const URL_TOKEN = process.env.REACT_APP_TOKEN;
 
 const ChatPage = () => {
   const [chatMsgInput, setChatMsgInput] = useState("");
@@ -59,12 +58,7 @@ const ChatPage = () => {
   };
   const getBotReply = () => {
     axios
-      .get(APP_URL, {
-        headers: {
-          Authorization: URL_TOKEN,
-          "Content-Type": "*",
-        },
-      })
+      .get(APP_URL)
       .then((response) => {
         response.status === 200 && setRespLoading(false);
       })
